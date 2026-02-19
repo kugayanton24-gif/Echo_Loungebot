@@ -56,6 +56,7 @@ def get_sheet():
     gc = gspread.authorize(creds)
 
     sh = gc.open_by_key(SHEET_ID)
+    print("Opened spreadsheet title:", sh.title)
     ws = sh.sheet1  # перший лист
     return ws
 
