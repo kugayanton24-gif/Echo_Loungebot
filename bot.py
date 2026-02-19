@@ -3,7 +3,7 @@ from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = os.getenv("TOKEN")  # Railway Variables -> TOKEN
+TOKEN = "8118144550:AAEeebM7QsUEESddnt2ohSyND4zEGjLgNxQ"  # Railway Variables -> TOKEN
 
 # 1) Тексти кнопок (як на скріні)
 BTN_MENU = "🍽 Меню/Menu"
