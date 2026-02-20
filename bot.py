@@ -48,7 +48,7 @@ BTN_SHARE_CONTACT = "📲 Поділитися контактом"
 # ================== LINKS (встав свої посилання) ==================
 LINKS = {
     BTN_MENU: "https://poolclublounge.choiceqr.com/p/vOzk-xefF/section:menyu-echo/zakuski",
-    BTN_LOYALTY: "https://www.instagram.com/echo.lounge.lviv/", "https://www.instagram.com/pool_club_lounge/",
+    BTN_LOYALTY: "https://www.instagram.com/echo.lounge.lviv/",
     BTN_DEALS: "https://your-deals-link.com",
     BTN_EVENTS: "https://your-events-link.com",
     BTN_PLACES: "https://your-places-link.com",
