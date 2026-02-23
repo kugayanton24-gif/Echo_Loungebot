@@ -30,14 +30,12 @@ GOOGLE_CREDS_JSON = os.getenv("GOOGLE_CREDS_JSON")
 UA_TZ = ZoneInfo("Europe/Kyiv")
 
 
-# ================== BUTTON TEXTS (як на фото) ==================
+# ================== BUTTON TEXTS ==================
 BTN_MENU = "🍽 Меню/Menu"
-BTN_LOYALTY = "⭐️ Система лояльності"
-BTN_DEALS = "🤩 Акції"
-BTN_PLACES = "🥂 Наші заклади"
-BTN_EVENTS = "Події📸"
-BTN_RULES = "Правила закладу"
-BTN_CRASH = "Краш-лист"
+BTN_LOYALTY = "💳 Система лояльності"
+BTN_DELIVERY = "🚗 Доставка"
+BTN_PLACES = "📍 Наші заклади"
+BTN_EVENTS = "✨ Події"
 BTN_CONTACTS = "📞 Контакти"
 BTN_REVIEW = "⭐️ Залишити відгук"
 BTN_BACK = "⬅️ Назад"
@@ -45,19 +43,79 @@ BTN_BACK = "⬅️ Назад"
 BTN_SHARE_CONTACT = "📲 Поділитися контактом"
 
 
-# ================== LINKS (встав свої посилання) ==================
+# ================== LINKS (встав/онови свої) ==================
 LINKS = {
     BTN_MENU: "https://poolclublounge.choiceqr.com/p/vOzk-xefF/section:menyu-echo/zakuski",
-    BTN_LOYALTY: "https://www.instagram.com/echo.lounge.lviv/",
-    BTN_DEALS: "https://your-deals-link.com",
-    BTN_EVENTS: "https://your-events-link.com",
-    BTN_PLACES: "https://your-places-link.com",
-    BTN_RULES: "https://your-rules-link.com",
-    BTN_CRASH: "https://your-crash-link.com",
-    BTN_REVIEW: "https://www.google.com/maps/place/Pool+Club+Lounge/@49.8098504,23.9702707,17z/data=!4m8!3m7!1s0x473ae7d3105fe31f:0x1fae4fb6b13f851e!8m2!3d49.8098504!4d23.9728456!9m1!1b1!16s%2Fg%2F11q25nwv1d?entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D",
+    BTN_LOYALTY: "https://www.instagram.com/echo.lounge.lviv/",         # заміниш на лінк лояльності (wallet/google pay)
+    BTN_DELIVERY: "https://your-delivery-link.com",                     # <-- встав лінк доставки
+    BTN_EVENTS: "https://your-events-link.com",                         # <-- встав лінк подій
+    BTN_REVIEW: "https://www.google.com/maps/place/Pool+Club+Lounge/@49.8098504,23.9702707,17z/data=!4m8!3m7!1s0x473ae7d3105fe31f:0x1fae4fb6b13f851e!8m2!3d49.8098504!4d23.9728456!9m1!1b1!16s%2Fg%2F11q25nwv1d?entry=ttu",
 }
 
 BOOKING_PHONE = "+380 096 998 67 87"
+
+
+# ================== TEXTS ==================
+TEXT_LOYALTY = (
+    "💳 Система Лояльності ECHO & POOL CLUB Lounge\n\n"
+    "Наша нова система лояльності — вже ДОСТУПНА! ❤️‍🔥\n\n"
+    "І найкраще — її не потрібно нічого скачувати 😎\n"
+    "Вона автоматично додається у ваш Apple Wallet або Google Pay 🥵\n\n"
+    "Після реєстрації ви отримуєте:\n"
+    "💸 3% кешбеку з кожного оплаченного чеку\n"
+    "🔥 Чим частіше відвідуєте — тим більший відсоток кешбеку\n"
+    "🎁 Бонуси, спеціальні пропозиції та закриті акції для учасників\n\n"
+    "Тисни кнопку «Система Лояльності» та починай накопичувати вже сьогодні 💎"
+)
+
+TEXT_DELIVERY = (
+    "Левова Паляниця — Доставка\n\n"
+    "Спробуй наші фірмові паляниці з авторськими поєднаннями, класичні та авторські піці, "
+    "а також страви з нашого оновленого меню.\n\n"
+    "🔥 Готуємо після підтвердження замовлення\n"
+    "🍕 Авторські рецептури та якісні інгредієнти\n"
+    "🚗 Оперативна доставка по місту\n\n"
+    "Спробуйте новий формат смаку — замовляйте онлайн у кілька кліків."
+)
+
+TEXT_PLACES = (
+    "📍 Наші заклади\n\n"
+    "Обирай формат відпочинку або активності — все в одному місці ❤️‍🔥\n\n"
+    "🍸 Echo Lounge\n"
+    "📍 вул. Щирецька 36/15\n"
+    "🕛 12:00 – 23:00\n"
+    "Ресторан lounge формату: кухня, бар, кальяни, події та атмосфера преміум рівня.\n\n"
+    "🎱 Pool Club Lounge\n"
+    "📍 вул. Щирецька 36/15\n"
+    "🕙 10:00 – 23:00\n"
+    "Більярдний клуб з кухнею, баром та лаунж-зоною для відпочинку з друзями.\n\n"
+    "🏸 Squashfit Center\n"
+    "📍 вул. Щирецька 36/15\n"
+    "🕙 10:00 – 23:00\n"
+    "Сквош-корти та спортивна атмосфера для тих, хто любить драйв і рух.\n\n"
+    "🥗 Smachno In\n"
+    "📍 ТВК “Південний” — Продуктовий ринок\n"
+    "🕙 10:00 – 19:00\n"
+    "Смачно, швидко та якісно — ідеально для обіду або перекусу.\n\n"
+    "Обирай локацію та бронюй або приходь без зайвих слів 🔥"
+)
+
+TEXT_EVENTS = (
+    "✨ 21 березня — Офіційне відкриття Echo Lounge\n\n"
+    "Ми довго готували цей момент.\n"
+    "І він буде гучним.\n\n"
+    "21 березня відбудеться офіційне відкриття Echo Lounge — вечір, який задасть новий рівень атмосфери у Львові.\n\n"
+    "Деталі програми поки що залишимо в секреті…\n"
+    "Але повірте — це буде більше, ніж просто відкриття 😉\n\n"
+    "Слідкуйте за оновленнями та готуйтеся до події, про яку говоритимуть."
+)
+
+TEXT_CONTACTS = (
+    "Забронювати столик:\n"
+    "+380 096 998 67 87"
+)
+
+TEXT_REVIEW = "Твоя думка важлива😉"
 
 
 # ================== GOOGLE SHEETS ==================
@@ -72,32 +130,21 @@ def get_sheet():
     creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
     gc = gspread.authorize(creds)
     sh = gc.open_by_key(SHEET_ID)
-    ws = sh.sheet1
-    return ws
+    return sh.sheet1
 
 
 def ensure_header(ws):
-    # якщо таблиця пуста — додати шапку
     values = ws.get_all_values()
     if not values:
         ws.append_row(
-            [
-                "datetime_ua",
-                "first_name",
-                "last_name",
-                "phone_number",
-                "username",
-                "user_id",
-            ]
+            ["datetime_ua", "first_name", "last_name", "phone_number", "username", "user_id"]
         )
 
 
 def save_contact_to_sheet(user, phone_number: str):
     ws = get_sheet()
     ensure_header(ws)
-
     dt_ua = datetime.now(UA_TZ).strftime("%d.%m.%Y %H:%M:%S")
-
     ws.append_row(
         [
             dt_ua,
@@ -120,12 +167,10 @@ def kb_request_contact() -> ReplyKeyboardMarkup:
 
 
 def kb_main_menu() -> ReplyKeyboardMarkup:
-    # 2 колонки як на фото + остання кнопка на всю ширину
     keyboard = [
         [KeyboardButton(BTN_MENU), KeyboardButton(BTN_LOYALTY)],
-        [KeyboardButton(BTN_DEALS), KeyboardButton(BTN_PLACES)],
-        [KeyboardButton(BTN_EVENTS), KeyboardButton(BTN_RULES)],
-        [KeyboardButton(BTN_CRASH), KeyboardButton(BTN_CONTACTS)],
+        [KeyboardButton(BTN_DELIVERY), KeyboardButton(BTN_PLACES)],
+        [KeyboardButton(BTN_EVENTS), KeyboardButton(BTN_CONTACTS)],
         [KeyboardButton(BTN_REVIEW)],
     ]
     return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
@@ -139,29 +184,13 @@ def kb_back_only() -> ReplyKeyboardMarkup:
     )
 
 
-def inline_open_button(url: str, title: str = "↗ Відкрити") -> InlineKeyboardMarkup:
+def inline_button(title: str, url: str) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup([[InlineKeyboardButton(title, url=url)]])
-
-
-# ================== FLOW / STATE ==================
-# Щоб людина не могла тиснути меню до того, як поділиться контактом:
-async def require_contact_first(update: Update) -> bool:
-    user = update.effective_user
-    if not user:
-        return True
-
-    # Ставимо прапорець у user_data після успішного збору контакту
-    if update.message and update.message.chat_id:
-        # context недоступний тут — перевірка робиться в handler-ах нижче
-        pass
-    return True
 
 
 # ================== HANDLERS ==================
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    # скидаємо прапорець на новий старт
     context.user_data["contact_saved"] = False
-
     await update.message.reply_text(
         "Щоб продовжити — поділись контактом 👇",
         reply_markup=kb_request_contact(),
@@ -172,7 +201,7 @@ async def handle_contact(update: Update, context: ContextTypes.DEFAULT_TYPE):
     contact = update.message.contact
     user = update.effective_user
 
-    # захист: беремо тільки контакт цього ж користувача
+    # беремо тільки контакт цього користувача
     if contact.user_id and contact.user_id != user.id:
         await update.message.reply_text(
             "Надішли, будь ласка, *свій* контакт через кнопку 👇",
@@ -198,120 +227,84 @@ async def handle_contact(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (update.message.text or "").strip()
 
-    # Якщо контакт ще не зібраний — не даємо в меню, знову просимо контакт
+    # якщо контакт не зібраний — просимо контакт
     if not context.user_data.get("contact_saved", False):
-        if text != "/start":
-            await update.message.reply_text(
-                "Спочатку поділись контактом 👇",
-                reply_markup=kb_request_contact(),
-            )
+        await update.message.reply_text(
+            "Спочатку поділись контактом 👇",
+            reply_markup=kb_request_contact(),
+        )
         return
 
-    # Назад на головне меню
+    # назад
     if text == BTN_BACK:
         await update.message.reply_text("Головне меню", reply_markup=kb_main_menu())
         return
 
-    # ---- MENU ITEMS ----
+    # ---- ПУНКТИ МЕНЮ ----
 
-    # 🍽 Меню/Menu
+    # Меню
     if text == BTN_MENU:
         url = LINKS[BTN_MENU]
         await update.message.reply_text(
             BTN_MENU,
-            reply_markup=inline_open_button(url),
+            reply_markup=inline_button("↗ Відкрити меню", url),
         )
         await update.message.reply_text(" ", reply_markup=kb_back_only())
         return
 
-    # ⭐️ Система лояльності (з текстом + кнопка приєднатися)
+    # Система лояльності
     if text == BTN_LOYALTY:
         url = LINKS[BTN_LOYALTY]
-        join_kb = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔥 Приєднатися", url=url)]]
-        )
-
         await update.message.reply_text(
-            "Наша нова система лояльності - вже ДОСТУПНА!❤️\n\n"
-            "І її не потрібно скачувати, бо вона буде прямо у вашому Apple Wallet або Google Pay🥵😎\n\n"
-            "Зареєструвавшись - ви отримуєте кешбек 3% за кожний оплачений чек "
-            "(чим частіше до нас ходите - тим більший відсоток)\n\n"
-            "*натискай кнопочку система лояльності*",
-            parse_mode="Markdown",
-            reply_markup=join_kb,
+            TEXT_LOYALTY,
+            reply_markup=inline_button("💳 Приєднатися", url),
         )
         await update.message.reply_text(" ", reply_markup=kb_back_only())
         return
 
-    # 🤩 Акції
-    if text == BTN_DEALS:
-        url = LINKS[BTN_DEALS]
+    # Доставка
+    if text == BTN_DELIVERY:
+        url = LINKS[BTN_DELIVERY]
         await update.message.reply_text(
-            BTN_DEALS,
-            reply_markup=inline_open_button(url),
+            TEXT_DELIVERY,
+            reply_markup=inline_button("🚗 Замовити доставку", url),
         )
         await update.message.reply_text(" ", reply_markup=kb_back_only())
         return
 
-    # 🎉 Події
+    # Наші заклади (без посилання — тільки текст + назад)
+    if text == BTN_PLACES:
+        await update.message.reply_text(TEXT_PLACES)
+        await update.message.reply_text(" ", reply_markup=kb_back_only())
+        return
+
+    # Події
     if text == BTN_EVENTS:
         url = LINKS[BTN_EVENTS]
         await update.message.reply_text(
-            BTN_EVENTS,
-            reply_markup=inline_open_button(url),
+            TEXT_EVENTS,
+            reply_markup=inline_button("📅 Переглянути події", url),
         )
         await update.message.reply_text(" ", reply_markup=kb_back_only())
         return
 
-    # 🥂 Наші заклади
-    if text == BTN_PLACES:
-        url = LINKS[BTN_PLACES]
-        await update.message.reply_text(
-            BTN_PLACES,
-            reply_markup=inline_open_button(url),
-        )
-        await update.message.reply_text(" ", reply_markup=kb_back_only())
-        return
-
-    # Правила закладу
-    if text == BTN_RULES:
-        url = LINKS[BTN_RULES]
-        await update.message.reply_text(
-            BTN_RULES,
-            reply_markup=inline_open_button(url),
-        )
-        await update.message.reply_text(" ", reply_markup=kb_back_only())
-        return
-
-    # Краш-лист
-    if text == BTN_CRASH:
-        url = LINKS[BTN_CRASH]
-        await update.message.reply_text(
-            BTN_CRASH,
-            reply_markup=inline_open_button(url),
-        )
-        await update.message.reply_text(" ", reply_markup=kb_back_only())
-        return
-
-    # 📞 Контакти (текст + назад)
+    # Контакти
     if text == BTN_CONTACTS:
-        await update.message.reply_text(
-            f"Забронювати столик:\n{BOOKING_PHONE}"
-        )
+        await update.message.reply_text(TEXT_CONTACTS)
         await update.message.reply_text(" ", reply_markup=kb_back_only())
         return
 
-    # ⭐️ Залишити відгук
+    # Відгук
     if text == BTN_REVIEW:
         url = LINKS[BTN_REVIEW]
         await update.message.reply_text(
-            BTN_REVIEW,
-            reply_markup=inline_open_button(url),
+            TEXT_REVIEW,
+            reply_markup=inline_button("⭐️ Стань частиною історії", url),
         )
         await update.message.reply_text(" ", reply_markup=kb_back_only())
         return
 
-    # Якщо написали щось інше
+    # якщо щось інше
     await update.message.reply_text("Обери пункт меню 👇", reply_markup=kb_main_menu())
 
 
@@ -320,11 +313,9 @@ def main():
         raise RuntimeError("TOKEN environment variable is not set")
 
     app = Application.builder().token(TOKEN).build()
-
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.CONTACT, handle_contact))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
-
     app.run_polling()
 
 
