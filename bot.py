@@ -47,8 +47,8 @@ BTN_SHARE_CONTACT = "📲 Поділитися контактом"
 LINKS = {
     BTN_MENU: "https://poolclublounge.choiceqr.com/p/vOzk-xefF/section:menyu-echo/zakuski",
     BTN_LOYALTY: "https://www.instagram.com/echo.lounge.lviv/",         # заміниш на лінк лояльності (wallet/google pay)
-    BTN_DELIVERY: "https://your-delivery-link.com",                     # <-- встав лінк доставки
-    BTN_EVENTS: "https://your-events-link.com",                         # <-- встав лінк подій
+    BTN_DELIVERY: "https://poolclublounge.choiceqr.com/delivery/section:menyu-echo",                     # <-- встав лінк доставки
+    BTN_EVENTS: "https://www.instagram.com/echo.lounge.lviv/",                         # <-- встав лінк подій
     BTN_REVIEW: "https://www.google.com/maps/place/Pool+Club+Lounge/@49.8098504,23.9702707,17z/data=!4m8!3m7!1s0x473ae7d3105fe31f:0x1fae4fb6b13f851e!8m2!3d49.8098504!4d23.9728456!9m1!1b1!16s%2Fg%2F11q25nwv1d?entry=ttu",
 }
 
